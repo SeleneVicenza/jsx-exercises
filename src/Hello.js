@@ -1,7 +1,12 @@
-const hello = <h1>Hello World</h1>
+// const name = '';
+const hello = (name) =>{
+    return <h1>Hello, {name}</h1>;
+} 
 
-export default function HelloWorld() {
-    return hello;
+function Welcome() {
+    return (hello('Pippo'))
+    
 }
 
 
+export default Welcome;
